@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2023.01.08.~2023.01.11. 부산</title>
+    <style>
+      @font-face {
+        font-family: "LeeSeoyun";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/LeeSeoyun.woff")
+          format("woff");
+        font-weight: normal;
+        font-style: normal;
+        }
+        body {
+            font-family: "LeeSeoyun";
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            background-image: url("./background.png");
+        }
+        .container{
+            width: 390px;
+            background-color: #026573;
+            height: 100%;
+        }
+        .photos {
+            margin-top: 30px;
+        }
+        .photo-prame {
+            background-color: white;
+	        margin: 15px 20px;
+	        height: 200px;
+
+            background-size: cover;
+            position: relative;
+        }
+        .footer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .f-title{
+            font-size: 30px;
+	        font-weight: 900;
+	        color: white;
+        }
+        .f-date{
+            font-size: 20px;
+	        font-weight: 500;
+	        color: white;
+        }
+        #image4{
+            background-image: url('./image4.jpg');
+            background-position: center;
+        }
+        #image3{
+            background-image: url('./image3.jpg');
+            background-position: center;
+        }
+        #image5{
+            background-image: url('./image5.jpg');
+            background-position: center;
+        }
+        #image1{
+            background-image: url('./image1.jpg');
+            background-position: center;
+        }
+        .photo_description{
+            color: white;
+	        background-color: black;
+           
+            width: fit-content;
+	        padding: 0 20px;
+	        margin-bottom: 10px;
+
+            border-radius: 10px;
+            position: absolute;
+            bottom: 0;
+
+            transform: translate(-50%);
+            left: 50%;
+        }
+
+        .showText{
+            opacity: 0;
+        }
+
+        .hideText{
+            opacity: 1;
+            transition: opacity 0.5s 1inerar;
+        }
+    </style>
+    <script>
+     
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="photos">
+            <div id="image4" class="photo-prame">
+                <span id="desc4" class="photo_description">
+                    광안리 도착!
+                </span>
+            </div>
+            <div id="image3" class="photo-prame">
+                <span id="desc3" class="photo_description">
+                    아쿠아리움
+                </span>
+            </div>
+            <div id="image5" class="photo-prame">
+                <span id="desc5" class="photo_description">
+                    X The Sky
+                </span>
+            </div>
+            <div id="image1" class="photo-prame">
+                <span id="desc1" class="photo_description">
+                    X The Sky
+                </span>
+            </div>
+        </div>
+        <div class="footer">
+            <P class="f-title">2023 부산여행</P> 
+            <p class="f-date">2023.01.08. ~ 2023.01.11.</p>   
+        </div>
+    </div>
+</body>
+</html>
